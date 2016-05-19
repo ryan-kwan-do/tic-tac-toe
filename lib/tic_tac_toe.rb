@@ -5,3 +5,4 @@ module TicTacToe
 end
 
 require_relative "./tic_tac_toe/square.rb"
+require_relative "./tic_tac_toe/player.rb"
