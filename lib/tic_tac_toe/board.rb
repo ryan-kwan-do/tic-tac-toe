@@ -16,6 +16,12 @@ module TicTacToe
       false
     end
 
+    def formatted_grid
+      grid.each do |row|
+      puts row.map { |square| square.value.empty? ? "_" : square.value }.join(" ")
+      end
+    end
+
 #set cell, dependent on the square class!!!
     def set_cell(x,y, value)
       get_cell(x,y).value = value
