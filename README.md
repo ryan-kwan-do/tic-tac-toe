@@ -1,8 +1,14 @@
 # TicTacToe
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tic_tac_toe`. To experiment with that code, run `bin/console` for an interactive prompt.
+Tic Tac Toe for the command line! This is a version of the walkthrough offered by CodeQuizes at: https://codequizzes.wordpress.com/2013/10/25/creating-a-tic-tac-toe-game-with-ruby/. This version includes some additional features not present in the walkthrough.
 
-TODO: Delete this and the text above, and describe your gem
+Current Problems:
+ - A player can overwrite another player's move.
+
+Nice-to-Haves that we don't have:
+
+ - Stats aren't tracked, not even within a session
+ - Player data cannot be saved
 
 ## Installation
 
@@ -22,7 +28,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Tic tac toe is a simple game. Instructions are printed in the command line when run.
 
 ## Development
 
