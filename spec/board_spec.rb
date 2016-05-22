@@ -46,6 +46,28 @@ module TicTacToe
   	  end
   	end
 
+  	context "#game over" do
+  	  it "returns the winner if winner? is true" do
+  	  	board = Board.new
+  	  	board.stub(:winner?) {true }
+  	  	expect(board.game_over).to eql(:winner)
+  	  end
+
+  	  it "returns draw if draw? is true and winner is false " do
+  	  	board = Board.new
+  	  	board.stub(:winner?) {false}
+  	  	board.stub(:draw?) {true}
+  	  	expect(board.game_over).to eql(:draw)
+  	  end
+
+  	  it "returns false if winner and draw are false" do
+  	  	board = Board.new
+  	  	board.stub(:winner?) { false }
+  	  	board.stub(:draw?) {false}
+  	  	expect(board.game_over).to eql(false)
+  	  end
+  	end
+
   end
 
 end

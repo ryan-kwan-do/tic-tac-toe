@@ -10,6 +10,12 @@ module TicTacToe
       grid[x][y]
     end
 
+    def game_over
+      return :winner if winner?
+      return :draw if draw?
+      false
+    end
+
 #set cell, dependent on the square class!!!
     def set_cell(x,y, value)
       get_cell(x,y).value = value
@@ -20,5 +26,6 @@ module TicTacToe
   	def default_grid
   	  Array.new(3) { Array.new(3) {Square.new }}
   	end
+
   end
 end
